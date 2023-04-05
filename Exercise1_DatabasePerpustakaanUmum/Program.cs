@@ -89,6 +89,11 @@ namespace Exercise1_DatabasePerpustakaanUmum
                                                 }
                                                 break;
                                         }
+                                    }
+                                    catch
+                                    {
+                                        Console.WriteLine("\nCheck for the value entered.");
+                                    }
                                 }
                             }
                     }
