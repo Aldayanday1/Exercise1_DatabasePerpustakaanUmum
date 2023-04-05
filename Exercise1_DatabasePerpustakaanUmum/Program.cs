@@ -133,7 +133,7 @@ namespace Exercise1_DatabasePerpustakaanUmum
             str = "insert into dbo.Anggota (Id, Anggota, Buku, Alamat, notlpn)"
                 + "values(@nim,@nma,@alamat,@JK,@Phn)";
             SqlCommand cmd = new SqlCommand(str, con);
-            cmd.CommandType = CommandType.Text;
+            cmd.CommandType = System.Data.CommandType.Text;
 
             cmd.Parameters.Add(new SqlParameter("Id", Id));
             cmd.Parameters.Add(new SqlParameter("Anggota", Anggota));
