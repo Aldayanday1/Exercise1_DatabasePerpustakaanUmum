@@ -127,5 +127,21 @@ namespace Exercise1_DatabasePerpustakaanUmum
                 Console.WriteLine();
             }
         }
+        public void insert(string Id, string Anggota, string Jk, string Alamat, string notlpn, SqlConnection con)
+        {
+            string str = "";
+            str = "insert into dbo.Anggota (Id, Anggota, Buku, Alamat, notlpn)"
+                + "values(@nim,@nma,@alamat,@JK,@Phn)";
+            SqlCommand cmd = new SqlCommand(str, con);
+            cmd.CommandType = CommandType.Text;
+
+            cmd.Parameters.Add(new SqlParameter("Id", Id));
+            cmd.Parameters.Add(new SqlParameter("Anggota", Anggota));
+            cmd.Parameters.Add(new SqlParameter("Jk", Jk));
+            cmd.Parameters.Add(new SqlParameter("Alamat", Alamat));
+            cmd.Parameters.Add(new SqlParameter("notlpn", notlpn));
+            cmd.ExecuteNonQuery();
+            Console.WriteLine("Data Berhasil Ditambahkan");
+        }
     }
 }
