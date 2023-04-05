@@ -79,6 +79,15 @@ namespace Exercise1_DatabasePerpustakaanUmum
 
                                                 }
                                                 break;
+                                            case '3':
+                                                conn.Close();
+                                                return;
+                                            default:
+                                                {
+                                                    Console.Clear();
+                                                    Console.WriteLine("\nInvalid Option");
+                                                }
+                                                break;
                                         }
                                 }
                             }
