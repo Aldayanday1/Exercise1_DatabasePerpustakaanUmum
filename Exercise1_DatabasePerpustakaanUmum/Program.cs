@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Data.SqlClient;
 using System.Threading.Tasks;
 
 namespace Exercise1_DatabasePerpustakaanUmum
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
