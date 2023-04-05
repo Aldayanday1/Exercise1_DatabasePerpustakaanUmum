@@ -54,6 +54,31 @@ namespace Exercise1_DatabasePerpustakaanUmum
                                                     pr.baca(conn);
                                                 }
                                                 break;
+
+                                            case '2':
+                                                {
+                                                    Console.Clear();
+                                                    Console.WriteLine("Masukkan Id :");
+                                                    string Id = Console.ReadLine();
+                                                    Console.WriteLine("Masukkan Nama Anggota Peminjam : ");
+                                                    string Anggota = Console.ReadLine();
+                                                    Console.WriteLine("Nama Buku yang dipinjam : ");
+                                                    string Jk = Console.ReadLine();
+                                                    Console.WriteLine("Masukkan Jenis Kelamin (L/P) : ");
+                                                    string Alamat = Console.ReadLine();
+                                                    Console.WriteLine("Masukkan No Telepon : ");
+                                                    string notlpn = Console.ReadLine();
+                                                    try
+                                                    {
+                                                        pr.insert(Id, Anggota, Jk, Alamat, notlpn, conn);
+                                                    }
+                                                    catch
+                                                    {
+                                                        Console.WriteLine("\nAnda tidak memiliki " + "akses untuk menambah data");
+                                                    }
+
+                                                }
+                                                break;
                                         }
                                 }
                             }
