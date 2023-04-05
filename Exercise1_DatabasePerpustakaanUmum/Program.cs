@@ -96,6 +96,11 @@ namespace Exercise1_DatabasePerpustakaanUmum
                                     }
                                 }
                             }
+                        default:
+                            {
+                                Console.WriteLine("\nInvalid Option");
+                            }
+                            break;
                     }
                 }
             }
