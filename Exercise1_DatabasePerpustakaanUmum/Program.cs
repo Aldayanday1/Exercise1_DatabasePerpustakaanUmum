@@ -47,7 +47,13 @@ namespace Exercise1_DatabasePerpustakaanUmum
                                         char ch = Convert.ToChar(Console.ReadLine());
                                         switch (ch)
                                         {
-
+                                            case '1':
+                                                {
+                                                    Console.Clear();
+                                                    Console.WriteLine("Data Perpustakaan");
+                                                    pr.baca(conn);
+                                                }
+                                                break;
                                         }
                                 }
                             }
